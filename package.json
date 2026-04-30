@@ -1,0 +1,33 @@
+{
+  "name": "qa-portfolio-playwright-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:cucumber": "cucumber-js",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pabalberione/qa-portfolio-playwright-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pabalberione/qa-portfolio-playwright-typescript/issues"
+  },
+  "homepage": "https://github.com/pabalberione/qa-portfolio-playwright-typescript#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.8.2",
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+  
+}
