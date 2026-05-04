@@ -5,7 +5,10 @@ module.exports = {
       'src/support/**/*.ts',
       'src/steps/**/*.ts'
     ],
-    format: ['progress'],
+    format: ['progress',
+      'html:reports/cucumber-report.html',
+      'json:reports/cucumber-report.json'
+    ],
     paths: ['tests/features/**/*.feature']
   }
 };
