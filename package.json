@@ -9,7 +9,8 @@
     "test:cucumber": "cucumber-js",
     "test:cucumber:report": "cucumber-js --format html:reports/cucumber-report.html --format json:reports/cucumber-report.json",
     "test:headed": "playwright test --headed",
-    "test:debug": "playwright test --debug"
+    "test:debug": "playwright test --debug",
+    "test:api": "newman run postman/collections/reqres-api-tests.postman_collection.json -e postman/environments/reqres.postman_environment.json"
   },
   "repository": {
     "type": "git",
@@ -27,8 +28,8 @@
     "@cucumber/cucumber": "^12.8.2",
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.6.0",
+    "newman": "^6.2.2",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
   }
-  
 }
